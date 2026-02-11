@@ -1,1 +1,60 @@
-<p>signup works!</p>
+<div class="signup-container">
+  <h2>Create Account</h2>
+
+  <form (ngSubmit)="onSubmit()">
+
+    <input
+      type="text"
+      placeholder="Name"
+      [value]="name()"
+      (input)="name.set($any($event.target).value)"
+    />
+
+    @if (name() && !nameValid()) {
+      <small>Name must be at least 3 characters</small>
+    }
+
+    <input
+      type="email"
+      placeholder="Email"
+      [value]="email()"
+      (input)="email.set($any($event.target).value)"
+    />
+
+    @if (email() && !emailValid()) {
+      <small>Enter a valid email</small>
+    }
+
+    <input
+      type="password"
+      placeholder="Password"
+      [value]="password()"
+      (input)="password.set($any($event.target).value)"
+    />
+
+    @if (password() && !passwordValid()) {
+      <small>Minimum 6 characters</small>
+    }
+
+    <input
+      type="password"
+      placeholder="Confirm Password"
+      [value]="confirmPassword()"
+      (input)="confirmPassword.set($any($event.target).value)"
+    />
+
+    @if (confirmPassword() && !passwordsMatch()) {
+      <small>Passwords do not match</small>
+    }
+
+    <button type="submit" [disabled]="!formValid()">
+      Sign Up
+    </button>
+
+    <p>
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </p>
+
+  </form>
+</div>
