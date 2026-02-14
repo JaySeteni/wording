@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
+import { Navbar } from '../../layout/navbar/navbar';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  standalone: true,
+  imports: [Navbar],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
 export class Dashboard {
 
+  // TODO: implement dashboard
+
+
+
 }
+

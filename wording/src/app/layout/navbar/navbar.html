@@ -1,1 +1,32 @@
-<p>navbar works!</p>
+<nav>    
+<div class="left">    
+    <button class="hamburger" (click)="openMenu()" aria-label="Menu" >
+        &#9776;
+    </button>    
+    <h1 class="logo">
+        {{ Logo() }} 
+    </h1>
+</div>
+
+<div class="right">
+    <div class="search">
+        <input type="text" placeholder="Search"/>   
+        <button class="search-button" (click)="search()" aria-label="Search">
+            &#128269;
+        </button>
+    </div>
+    <div class="profiles">
+        <button class="profile-button" aria-label="profile">
+            &#128100;
+        </button>
+    </div>
+<!-- <div class="profile">
+         <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/login">Login</a>
+        <a routerLink="/signup">Signup</a> 
+    </div> -->
+</div>
+
+
+</nav>
+
