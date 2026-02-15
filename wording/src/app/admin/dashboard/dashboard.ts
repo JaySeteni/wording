@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Navbar } from '../../layout/navbar/navbar';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -9,8 +10,6 @@ import { Navbar } from '../../layout/navbar/navbar';
   styleUrl: './dashboard.css',
 })
 export class Dashboard {
-
-  // TODO: implement dashboard
 
 
 
