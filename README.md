@@ -1,3 +1,0 @@
-# wording
-
-freeapi.miniprojectideas.com
