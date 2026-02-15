@@ -1,59 +1,233 @@
-# Wording
+# wording
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.3.
+freeapi.miniprojectideas.com
 
-## Development server
 
-To start a local development server, run:
+Hello world, from angular IT. 
 
-```bash
-ng serve
-```
+These are notes that we will be taking down today. 
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+app.component.html:
 
-## Code scaffolding
+imports template URL and RouterOutlet
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+hello world, from Angular 19
 
-```bash
-ng generate component component-name
-```
+" Hello World from Angular 19"
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+show in browser.
 
-```bash
-ng generate --help
-```
+title = 'dashboard-19' in app.component.ts
 
-## Building
+a string variable. {{Title}} in component html
 
-To build the project run:
+new component from the CLI : ng g c header
 
-```bash
-ng build
-```
+new header in src file: header
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+defining the component:
 
-## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Angular.json file to be where App name is put.
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
+isMorning: boolean = true;
 
-For end-to-end (e2e) testing, run:
+open Template: 
 
-```bash
-ng e2e
-```
+@if (isMorning) { 
+	goodMorining
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+} @else {
+	Good Evening.
 
-## Additional Resources
+}
+ <router-outlet /> 
+---------------------------------------
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+COMPONENT.TS
+
+isMorning: boolean = false;
+
+
+morningToggle(): boolean = {  // function call 
+
+ this.isMorning = !this.isMorning;
+
+ return this.isMorning;
+
+
+COMPONENT.HTML
+
+<button (click)="morningToggle()"> Hello </button>
+
+@if (isMorning) { 
+	div good Morning
+
+} @else {
+	div Good Evening.
+
+}
+
+
+
+ <router-outlet /> 
+
+
+
+--------------------------
+
+
+FOR LOOPS: for defining an Array of an Object ;
+
+salutation: any= [
+
+{
+id: 1, 
+message: 'Good Morning'
+},
+{
+
+id: 2, 
+message: 'Good Afternon'
+},
+{
+
+id: 3, 
+message: 'Good Evening'
+},
+{
+
+id: 4, 
+message: 'Good Night'
+}
+];
+
+
+@for (sal of salutations; track sal.id) {
+
+div h1 {{sal.message}}
+
+Iterates over an Array and is displayed using a FOR  loop.
+
+To track is to see how your template is  being rendered. 
+improving rendering speed.
+
+tracks changes and updates latest changes only and 
+
+does not load everything anew everytime. 
+
+
+
+----------------------------------------------------------
+
+
+
+MOCK DASHBOARD DRAW UP:
+
+
+MAIN NAVIGATION CONTENT:
+
+background color : #020202;
+
+
+Leftside:  Hamburger button with Main logo right next to it. 
+
+Rightside: 
+
+
+	   All Button icons are light grey, 
+	   except the search button, freestlye.
+
+	   search for with search icon botton for search input.
+
+	   Profile icon with a down pointing arrow button.
+
+
+
+
+
+
+
+// SIDE NAVIGATION CONTENT:
+
+Start Bootstrap logo
+
+core 
+logo shaded :
+light grey 
+caps 
+small bolded font.
+
+Dashboard Button grey 
+
+interface logo :
+
+like core logo styling
+
+Layouts Button 
+Pages Button 
+
+addons with core styling
+
+Charts Button 
+Tables Button
+
+BACKGROUND DARKGREY #020202 color.
+
+
+		---------- - --- - - -- -- -- -  - - - --- -
+
+// MAIN COMPONENT CONTENT: 
+
+
+Logo Dashboard
+
+small logo 'dashboard' shaded.
+
+
+four cards : array from available card in different 
+templates in the app;
+
+Primary Card | Warining Card
+view Details	view Details
+
+Success Card | Danger Card
+view Details	view Details
+
+greyened - highlighted view detail buttons underlined.
+
+Area Chart Example // lightgrey background.
+
+Chart 
+
+
+
+
+4000  
+
+3000
+
+2000
+
+1000
+
+
+// line chart rising to 4 thousand.  
+
+
+
+----------------------------------------------------
+-------------------------
+
+
+
+PROPERTY AND DATA BINDING IN ANGULAR :
+
+
+
+
+
+
+
+
