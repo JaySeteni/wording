@@ -1,0 +1,74 @@
+.side-navbar {
+    color: #fff;
+    background-color: #020202;
+    width: 25vw;
+    padding: 1rem;
+    position : fixed;
+    
+    left: 0;
+    height: 99vh;
+    border-radius:0  0rem 0.5rem 0;
+    margin-top:0%;
+}
+.container {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.mainLogo {
+    display:flex;
+    /* gap: 10px; */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+.core {
+    margin-top: 2rem;
+    margin-left: -1.5rem;
+    text-transform: uppercase;
+}
+.dashboardContent {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+.dashboardContent a {
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: lightslategray;
+    text-transform: uppercase;
+}
+.dashboardContent a:hover {
+    color: #ff5722;
+    text-decoration:overline;
+
+}
+.hamburger {
+    /* display: none; */
+    /* flex-direction: column;
+    cursor: pointer; */
+    font-size: 20px; 
+    color: #fff;
+    background: #020202; 
+    border: none; 
+    cursor: pointer
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.container span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.core {
+     margin-top: 2rem;
+     text-transform: uppercase;
+}
+
